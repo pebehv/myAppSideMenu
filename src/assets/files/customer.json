@@ -1,0 +1,24 @@
+{"data":[
+    {
+        "name": "Pebe",
+        "state": "Look, Kid...",
+        "description": "Description1",
+        "img": "img.png"
+
+    },
+    {
+        "name": "Marga",
+        "state": "Look2, Kid2...",
+        "description": "Description2",
+        "img": "img2.png"
+
+    },
+    {
+        "name": "Luis",
+        "state": "Look3, Kid3...",
+        "description": "Description3",
+        "img": "img3.png"
+
+    }
+]
+}

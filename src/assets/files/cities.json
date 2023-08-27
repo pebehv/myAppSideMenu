@@ -1,0 +1,27 @@
+{"data":[
+    {
+        "name": "Canada",
+        "description": "I love Canada",
+        "img": "Toronto.webp"
+
+    },
+    {
+        "name": "Polonia",
+        "description": "Beautiful Poland",
+        "img": "polonia.jpg"
+
+    },
+    {
+        "name": "España",
+        "description": "I like Spain",
+        "img": "spain.jfif"
+
+    },
+    {
+        "name": "Francia",
+        "description": "How beautiful France",
+        "img": "paris-torre.webp"
+
+    }
+]
+}
