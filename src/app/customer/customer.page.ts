@@ -8,6 +8,8 @@ import { map } from 'rxjs/operators';
 })
 export class CustomerPage implements OnInit {
 
+  customer: any = null;
+  searchedUser: any
   constructor(
     private http: HttpClient
   ) { }
@@ -16,6 +18,8 @@ export class CustomerPage implements OnInit {
     this.getUsers()
     .subscribe(data =>{
       console.log('res: ', data)
+      this.customer = data;
+      this.searchedUser = this.customer;
     })
   }
 
@@ -29,4 +33,14 @@ export class CustomerPage implements OnInit {
     )
   }
 
+  searchCustomer(event: any){
+    console.log("dasdsa")
+    const text = event.target.value;
+    this.searchedUser = this.customer;
+    if(text && text.trim() != ''){
+      this.searchedUser = this.searchedUser.filter((user: any)=>{
+        return (user.name.toLowerCase().indexOf(text.toLowerCase())  > -1);
+      })
+    }
+  }
 }
