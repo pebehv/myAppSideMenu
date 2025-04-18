@@ -10,7 +10,7 @@
         *ngFor="let citi of  cities" >
             <ion-card  (click)="presentAlert()">
                 <!--img src="../../assets/img/{{citi.img}}" alt="" class="img_size"-->
-                <img src="assets/img/customer/{{citi.img}}" alt="" class="img_size">
+                <img src="assets/img/{{citi.img}}" alt="" class="img_size">
                     <div class="card-title">{{citi.name}}</div>
                       <p>{{citi.description}} </p>
               
